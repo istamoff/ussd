@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner_background"
+    android:padding="25dp"
+    tools:context=".BannerFragment">
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:id="@+id/btn_banner"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/banner"
+        />
+
+    <TextView
+        android:id="@+id/tv_tarif"
+        android:layout_below="@+id/btn_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarif 'Просто 10'"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/teal_700"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_tulov"
+        android:layout_below="@+id/tv_tarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abonent to'lovi:                              10.0000 so'm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:id="@+id/devider"
+        android:layout_below="@+id/tv_tulov"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkGrayColor"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_below="@+id/devider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tarif_rejasi_jismoniy_va_yuridik_shaxslar_uchun_2019_yil_1_f_vraldan_30_iyunga_qadar_taqdim_etiladi_kiritilgan_daqiqa_limiti_mb_sms_1_kal_ndar_oyiga_taqdim_etiladi_tarif_rejasiga_o_zb_kt_l_kom_ak_sotuvlar_ofisi_shuningdek_dil_rlar_orqali_ulanish_mumkin_abon_nt_to_lovini_hisoblash_abon_nt_faol_bo_lganida_amalga_oshiriladi_agar_abon_nt_hisobida_pul_mablag_i_yetarli_bo_lmaganligi_sababli_abon_nt_bloklangan_bo_lsa_to_lov_kiritilmaguniga_qadar_to_lov_hisoblanmaydi_ushbu_tarif_rejasiga_ulanish_yoki_unga_o_tishda_abonent_to_lovi_kalendar_oyidagi_qolgan_kunlar_soniga_nisbatan_kiritilgan_daqiqalar_sms_va_internet_trafigi_shuningdek_qolgan_kunlar_soni_bo_yicha_to_liq_daqiqaga_yaxlitlangan_holda_hisoblab_chiqiladi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+          <Button
+              android:id="@+id/btn_batafsil"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:layout_marginStart="5dp"
+              android:layout_marginEnd="25dp"
+              android:text="Batafsil"
+              android:textAllCaps="false"
+              android:layout_weight="1"
+              android:backgroundTint="#E8E0E0"
+              android:textColor="@color/darkGrayColor"
+              />
+        <Button
+            android:id="@+id/btn_ulanish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="Ulanish"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

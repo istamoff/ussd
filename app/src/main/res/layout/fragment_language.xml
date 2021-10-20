@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageFragment">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DM Mobile Group"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+       android:layout_marginTop="50dp"
+        android:id="@+id/btn_uz"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="O'zbek"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/image_logo"
+        android:layout_centerHorizontal="true"
+
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_rus"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Русский"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_uz"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_kril"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Ўзбек"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_rus"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>

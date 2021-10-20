@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/uztelecom_logo"
+        />
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv_title"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code Name"
+        android:textColor="@color/blackColor"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv_desc"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code Name"
+        android:textColor="@color/darkGrayColor"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_desc"
+        android:layout_toRightOf="@+id/imageView"
+        android:background="@color/darkGrayColor"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_arrow"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_down"
+        />
+
+</RelativeLayout>

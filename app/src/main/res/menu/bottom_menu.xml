@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/nav_balans"
+    android:icon="@drawable/dollar"
+    android:title="Balans"/>
+    <item android:id="@+id/nav_operator"
+        android:icon="@drawable/user"
+        android:title="Operator"/>
+    <item
+        android:id="@+id/nav_home"
+        android:title="Asosiy"
+        android:icon="@drawable/home"
+        />
+    <item android:id="@+id/nav_yangiliklar"
+        android:icon="@drawable/notification"
+        android:title="Yangiliklar"/>
+    <item android:id="@+id/nav_sozlamalar"
+        android:icon="@drawable/settings"
+        android:title="Sozlamalar"/>
+</menu>

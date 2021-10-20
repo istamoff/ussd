@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btn_ulanish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Ulanish"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:paddingEnd="35dp"
+        android:paddingStart="35dp"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SMSPaketlar">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        style="@style/Widget.AppCompat.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@+id/btn_menu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_back"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS Paketlar"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_menu"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/tabPrimaryColor"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tabPrimaryColor"
+            app:tabIndicatorHeight="0dp"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabTextColor="@android:color/white"
+            app:tabSelectedTextColor="@color/tabPrimaryColor"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_layout"
+        android:background="@color/purple_700"
+        android:layout_below="@+id/tabContainer"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_trafik_tekshirish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS ni tekshirish"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            app:cornerRadius="5dp"
+            android:backgroundTint="#FFD12D"
+            android:textColor="#9C8120"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_layout"
+        android:layout_above="@+id/bottomNavView"
+        android:background="@color/purple_700"
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_recyclerview"
+            />
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        android:background="@drawable/custom_bottom_nav"
+        app:itemIconTint="#68D2FF"
+        app:itemTextColor="#68D2FF"
+        app:menu="@menu/bottom_menu"
+
+        />
+
+</RelativeLayout>
